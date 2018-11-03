@@ -1,5 +1,5 @@
 # HakerRank
-Zadania z serwisu haker rank <br>
+Zadania z serwisu hakerrank.com <br>
 
 <h1>30 Days of Code</h1><br>
 <ul>

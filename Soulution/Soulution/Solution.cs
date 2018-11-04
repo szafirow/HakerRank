@@ -20,12 +20,28 @@ class Solution
     static void Main(string[] args)
     {
         int n = Convert.ToInt32(Console.ReadLine());
-        int result;
-        for(int i = 1; i < 11; i++)
+
+        string[] arr = new string[n];
+
+        for (int i = 0; i < n; i++)
         {
-            result = n * i;
-            Console.WriteLine(n + " x " + i + " = " + result);
+            string s = Console.ReadLine();
+            arr[i] = s;
         }
+
+        for (int i = 0; i < n; i++)
+        {
+            char[] arr2 = arr[i].ToCharArray();
+            string even = "";
+            string odd = "";
+            for (int j = 0; j < arr2.Length; j++)
+            {
+                if (j % 2 == 0) even += arr2[j];
+                if (j % 2 != 0) odd += arr2[j];
+            }
+            Console.WriteLine(even + " " + odd);
+        }
+
         Console.ReadKey();
 
 
